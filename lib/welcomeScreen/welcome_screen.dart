@@ -1,60 +1,34 @@
-/*import 'package:flutter/material.dart';
-import 'package:quizee/loginScreen/login_screen.dart';
-
-class WelcomeScreen extends StatelessWidget {
-  const WelcomeScreen({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      decoration: const BoxDecoration(
-        image: DecorationImage(
-          fit: BoxFit.fill,
-          image: AssetImage('assets/images/welcomescreen.jpeg'),
-        
-        ),
-      ),
-            
-      body:Column(
-        children: [
-          Center(
-            child: Align(
-              alignment: FractionalOffset.bottomCenter,
-              child: Image(
-                image: AssetImage('assets/images/usa.jpeg'),
-                onTap: () {
-                  // Navigate to the next screen.
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => LoginScreen()),
-                  );
-                },
-              ),
-            ),
-          ),
-        ],
-      ),
-
-    );
-  }
-}
-
 import 'package:flutter/material.dart';
 
-class WelcomeScreen extends StatelessWidget {
-  const WelcomeScreen({Key? key}) : super(key: key);
+class errorloader extends StatefulWidget {
+  const errorloader({super.key});
 
+  @override
+  State<errorloader> createState() => _errorloaderState();
+}
+
+class _errorloaderState extends State<errorloader> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        decoration: const BoxDecoration(
-          image: DecorationImage(
-            fit: BoxFit.fill,
-            image: AssetImage('assets/images/welcomescreen.jpeg'),
+      body: SafeArea(
+        child: Align(
+          alignment: Alignment.center,
+          child: Center(
+            child: Column(children: [
+              CircularProgressIndicator(),
+              SizedBox(height: 10),
+              Container(
+                child: Center(
+                  child: Text('traduciendo tu app al español',
+                      style:
+                          TextStyle(fontSize: 20, fontStyle: FontStyle.normal)),
+                ),
+              )
+            ]),
           ),
         ),
       ),
     );
   }
-}*/
+}

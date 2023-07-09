@@ -25,6 +25,7 @@ class _SignMeState extends State<SignMe> {
   final _firstNameController = TextEditingController();
   final _lastNameController = TextEditingController();
   final _ageController = TextEditingController();
+  final _genderController = TextEditingController();
 
   @override
   void dispose() {
@@ -33,6 +34,7 @@ class _SignMeState extends State<SignMe> {
     _firstNameController.dispose();
     _lastNameController.dispose();
     _ageController.dispose();
+    _genderController.dispose();
     super.dispose();
   }
 
@@ -52,6 +54,7 @@ class _SignMeState extends State<SignMe> {
           _lastNameController.text.trim(),
           int.parse(_ageController.text.trim()),
           _emailController.text.trim(),
+          _genderController.text.trim(),
         );
 
         var url = await ProfileService()
@@ -70,13 +73,14 @@ class _SignMeState extends State<SignMe> {
   }
 
   Future<void> addUserDetails(String userId, String firstName, String lastName,
-      int age, String email) async {
+      int age, String email, String gender) async {
     await FirebaseFirestore.instance.collection('Users').doc(userId).set({
       'firstName': firstName,
       'lastName': lastName,
       'age': age,
       'email': email,
       'id': userId,
+      'gender': gender,
     });
   }
 
@@ -109,7 +113,22 @@ class _SignMeState extends State<SignMe> {
                     child: SizedBox(
                       height: 80,
                       width: 150,
-                      child: Image.asset('assets/images/ath.jpeg'),
+                      child: Image.asset('assets/images/abaLogo2.jpg'),
+                    ),
+                  ),
+                  const SizedBox(height: 2),
+                  Padding(
+                    padding: EdgeInsets.only(top: 8.0),
+                    child: SizedBox(
+                      height: 20,
+                      child: Text(
+                        'Therapy Group',
+                        style: TextStyle(
+                            fontStyle: FontStyle.normal,
+                            fontSize: 20,
+                            fontWeight: FontWeight.w500,
+                            color: Colors.black),
+                      ),
                     ),
                   ),
                   Padding(

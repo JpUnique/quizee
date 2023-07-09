@@ -1,107 +1,106 @@
 {
-    "questions": [
-      {
-        "answer": "Stimulus control",
-        "options": [
-          "Respondent Behavior",
-          "Stimulus control",
-          "Operant conditioning",
-          "Reinforcer"
-        ],
-        "question": "The rate of a given behavior is higher in the presence of a stimulus than when that stimulus is absent. This is an example of:"
-      },
-      {
-              "answer": "Paired choice",
-              "options": [
-                  "Single stimulus",
-                  "Multiple stimulus without replacement",
-                  "Free operant",
-                  "Paired choice"
-              ],
-              "question": "An RBT was conducting a preference assessment. The client was presented with 2 stimuli at a time. The location of these was interchanged and all potential pairings were presented to the client. Which preference assessment did the RBT implement?"
-          },
-          {
-              "answer": "Free operant",
-              "options": [
-                  "Single stimulus",
-                  "Multiple stimulus with replacement",
-                  "Free operant",
-                  "Multiple stimulus without replacement"
-              ],
-              "question": "During naturalistic observation, a client was presented with an array of stimuli. The client was free to interact with them. As the client interacted with the potential reinforcers, the therapist was collecting the time and number of interactions. The therapist used:"
-          },
-          {
-              "answer": "Multiple stimulus without replacement",
-              "options": [
-                  "Single stimulus",
-                  "Multiple stimulus without replacement",
-                  "Free operant",
-                  "Paired choice"
-              ],
-              "question": "During naturalistic observation, a client was presented with an array of stimuli. As the client selected stimuli, these were removed from the environment. No other stimuli were added to the array. Which preference assessment did the RBT implement?"
-          },
-          {
-              "answer": "Functional assessment",
-              "options": [
-                  "Preference assessment",
-                  "Individualized assessment",
-                  "Environmental assessment",
-                  "Functional assessment"
-              ],
-              "question": "During initial assessment, an RBT was assisting a BCaBA. The RBT was asked to pay close attention to the consequences of problematic behaviors. The BCaBA told the RBT that he wanted to hypothesize about the WHY behind the client's responses. The RBT is most likely assisting with a (n):"
-          },
-          {
-              "answer": "Pain",
-              "options": [
-                  "Escape",
-                  "Water",
-                  "Pain",
-                  "Food"
-              ],
-              "question": "Which of the following is an example of an unconditioned punisher?"
-          },
-          {
-              "answer": "A math exercise is presented, the client finishes the exercise, a candy is given (the behavior occurs more often in the future)",
-              "options": [
-                  "A math exercise is presented, the client finished the exercise, no more homework (the behavior occurs more often in the future)",
-                  "A math exercise is presented, the client finishes the exercise, a candy is given (the behavior occurs more often in the future)",
-                  "A math exercise is presented, the client finished the exercise, a candy is given (the behavior occurs less often in the future)",
-                  "A math exercise is presented, the client finished the exercise, no more homework (the behavior occurs less often in the future)"
-              ],
-              "question": "Which of the following is an example of a Three-Term-Contingency that uses positive reinforcement?"
-          },
-          {
-              "answer": "Positive reinforcement, Negative reinforcement, Positive punishment, Negative punishment",
-              "options": [
-                  "Unconditioned stimulus, Conditioned stimulus, Neutral stimulus",
-                  "Unconditioned stimulus, Conditioned Stimulus",
-                  "Positive reinforcement, Negative reinforcement, Positive punishment, Negative punishment",
-                  "Respondent behaviors"
-              ],
-              "question": "____________________ are all involved in operant conditioning as consequences"
-          },
-          {
-              "answer": "Unconditioned stimulus, Conditioned stimulus, Neutral stimulus",
-              "options": [
-                  "Unconditioned response, Conditioned response, Respondent behaviors",
-                  "Unconditioned stimulus, Conditioned stimulus, Neutral stimulus",
-                  "Positive reinforcement, Negative reinforcement",
-                  "Positive punishment, Negative punishment"
-              ],
-              "question": "____________________ are all involved in classical conditioning as antecedent conditions"
-          },
-          {
-              "answer": "The antecedent is what precedes behavior, and the consequences is what proceeds a behavior",
-              "options": [
-                  "The antecedent is what precedes behavior, and the consequences is what proceeds a behavior",
-                  "The antecedent is what proceeds behavior, and the consequence is what precedes a behavior",
-                  "Antecedents and consequences precede behaviors",
-                  "Antecedents and consequences proceed behaviors"
-              ],
-              "question": "Difference between antecedent and consequences"
-            }
-    ]
-    "questionType": "Third QUIZZ_ Chapter B_ Assesment",
-  "questionID" : "3"
-  }
-
+  "questionType": "Third QUIZ - Chapter B Assessment",
+  "questionID": "3",
+  "questions": [
+    {
+      "question": "The rate of a given behavior is higher in the presence of a stimulus than when that stimulus is absent. This is an example of:",
+      "options": [
+        "Respondent Behavior",
+        "Stimulus control",
+        "Operant conditioning",
+        "Reinforcer"
+      ],
+      "answer": "Stimulus control"
+    },
+    {
+      "question": "An RBT was conducting a preference assessment. The client was presented with 2 stimuli at a time. The location of these was interchanged and all potential pairings were presented to the client. Which preference assessment did the RBT implement?",
+      "options": [
+        "Single stimulus",
+        "Multiple stimulus without replacement",
+        "Free operant",
+        "Paired choice"
+      ],
+      "answer": "Paired choice"
+    },
+    {
+      "question": "During naturalistic observation, a client was presented with an array of stimuli. The client was free to interact with them. As the client interacted with the potential reinforcers, the therapist was collecting the time and number of interactions. The therapist used:",
+      "options": [
+        "Single stimulus",
+        "Multiple stimulus with replacement",
+        "Free operant",
+        "Multiple stimulus without replacement"
+      ],
+      "answer": "Free operant"
+    },
+    {
+      "question": "During naturalistic observation, a client was presented with an array of stimuli. As the client selected stimuli, these were removed from the environment. No other stimuli were added to the array. Which preference assessment did the RBT implement?",
+      "options": [
+        "Single stimulus",
+        "Multiple stimulus without replacement",
+        "Free operant",
+        "Paired choice"
+      ],
+      "answer": "Multiple stimulus without replacement"
+    },
+    {
+      "question": "During initial assessment, an RBT was assisting a BCaBA. The RBT was asked to pay close attention to the consequences of problematic behaviors. The BCaBA told the RBT that he wanted to hypothesize about the WHY behind the client's responses. The RBT is most likely assisting with a(n):",
+      "options": [
+        "Preference assessment",
+        "Individualized assessment",
+        "Environmental assessment",
+        "Functional assessment"
+      ],
+      "answer": "Functional assessment"
+    },
+    {
+      "question": "Which of the following is an example of an unconditioned punisher?",
+      "options": [
+        "Escape",
+        "Water",
+        "Pain",
+        "Food"
+      ],
+      "answer": "Pain"
+    },
+    {
+      "question": "Which of the following is an example of a Three-Term-Contingency that uses positive reinforcement?",
+      "options": [
+        "A math exercise is presented, the client finished the exercise, no more homework (the behavior occurs more often in the future)",
+        "A math exercise is presented, the client finishes the exercise, a candy is given (the behavior occurs more often in the future)",
+        "A math exercise is presented, the client finished the exercise, a candy is given (the behavior occurs less often in the future)",
+        "A math exercise is presented, the client finished the exercise, no more homework (the behavior occurs less often in the future)"
+      ],
+      "answer": "A math exercise is presented, the client finishes the exercise, a candy is given (the behavior occurs more often in the future)"
+    },
+    {
+      "question": "Which of the following are all involved in operant conditioning as consequences?",
+      "options": [
+        "Unconditioned stimulus, Conditioned stimulus, Neutral stimulus",
+        "Unconditioned stimulus, Conditioned stimulus",
+        "Positive reinforcement, Negative reinforcement, Positive punishment, Negative punishment",
+        "Respondent behaviors"
+      ],
+      "answer": "Positive reinforcement, Negative reinforcement, Positive punishment, Negative punishment"
+    },
+    {
+      "question": "Which of the following are all involved in classical conditioning as antecedent conditions?",
+      "options": [
+        "Unconditioned response, Conditioned response, Respondent behaviors",
+        "Unconditioned stimulus, Conditioned stimulus, Neutral stimulus",
+        "Positive reinforcement, Negative reinforcement",
+        "Positive punishment, Negative punishment"
+      ],
+      "answer": "Unconditioned stimulus, Conditioned stimulus, Neutral stimulus"
+    },
+    {
+      "question": "What is the difference between antecedents and consequences?",
+      "options": [
+        "The antecedent is what precedes behavior, and the consequences are what follow a behavior",
+        "The antecedent is what follows behavior, and the consequences are what precede a behavior",
+        "Antecedents and consequences precede behaviors",
+        "Antecedents and consequences follow behaviors"
+      ],
+      "answer": "The antecedent is what precedes behavior, and the consequences are what follow a behavior"
+    }
+  ]
+}

@@ -1,16 +1,12 @@
 // ignore_for_file: unused_element
 
-import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 import 'package:quizee/loginScreen/sign_me.dart';
-
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:quizee/mainScreen/main_screen.dart';
-import 'package:quizee/services/firebase_service.dart';
 
-import '../core/models/profile.dart';
 import '../core/services/auth_service.dart';
 import '../core/services/profile_service.dart';
 
@@ -59,46 +55,39 @@ class _LoginState extends State<Login> {
   }
 
   Future<void> loginUser() async {
-    Map<String, dynamic> data = {
-      'email': _emailController.text.trim(),
-      'password': _passwordController.text.trim(),
-    };
-     
+    User? user = await AuthService().signIn(
+      context,
+      email: _emailController.text.trim(),
+      password: _passwordController.text.trim(),
+    );
 
-
-    try {
-      User? user = await AuthService().signIn(data, context);
-
-      if (user != null) {
-        Future<void> fetchImageUrl() async {
-          try {
-            //TODO: check if profile works
-           ProfileModel model = await ProfileService().getProfile(user.uid);
-            final url = await ProfileService()
-                .getProfilePicture(model.gender!, model.age.toString());
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                  builder: (context) => MainScreen(
-                        genderImage: url.toString(),
-                      )),
-            );
-          } catch (e) {
-            // Handle any error that occurs while fetching the image URL
-            print('Error fetching image URL: $e');
-          }
-        }
+    if (user != null) {
+      FirebaseFirestore firestore = FirebaseFirestore.instance;
+      //check if field exit in a doc
+      DocumentSnapshot snapshots =
+          await firestore.collection("Users").doc(user.uid).get();
+      //  if (snapshots.exists) {
+      if (snapshots["email"] == user.email) {
+        var url = await ProfileService()
+            .getProfilePicture(snapshots["gender"], snapshots["age"]);
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+              builder: (context) => MainScreen(
+                    genderImage: url.toString(),
+                  )),
+        );
       }
-    } on FirebaseAuthException catch (e) {
-      showDialog(
-        context: context,
-        builder: (context) {
-          return AlertDialog(
-            content: Text(e.message.toString()),
-          );
-        },
-      );
+      // Handle any error that occurs while fetching the image URL
+      print('Error fetching image URL: e');
     }
+    // showDialog(
+    //     context: context,
+    //     builder: (context) {
+    //       return AlertDialog(
+    //         content: Text("Failed"),
+    //       );
+    //     });
   }
 
   void _showForgotPasswordPopup() {
@@ -149,6 +138,7 @@ class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       resizeToAvoidBottomInset: true,
       body: SafeArea(
         child: SingleChildScrollView(
@@ -172,19 +162,17 @@ class _LoginState extends State<Login> {
                     child: SizedBox(
                       height: 80,
                       width: 200,
-                      child: Image.asset('assets/images/ath.jpeg'),
+                      child: Image.asset('assets/images/abaLogo2.jpg'),
                     ),
                   ),
                   const SizedBox(height: 5),
-InkWell(
-  onTap: (){
-    FirebaseService().upload();
-  },
-  child: Container(
-    color:Colors.red,
-    child: Text("Upload Collections"))),
-
-
+// InkWell(
+//   onTap: (){
+//     FirebaseService().upload();
+//   },
+//   child: Container(
+//     color:Colors.red,
+//     child: Text("Upload Collections"))),
 
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 15.0),

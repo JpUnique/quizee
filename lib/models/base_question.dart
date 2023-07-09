@@ -1,21 +1,22 @@
 import 'question_model.dart';
 
-class QuestionModel {
+class BaseQuestionModel {
   final String? questionType;
   final String? questionID;
-  final List<Question>? questions;
+  final List<QuestionModel>? questions;
 
-  QuestionModel({
+  BaseQuestionModel({
     this.questionType,
     this.questionID,
     this.questions,
   });
 
-  factory QuestionModel.fromJson(Map<String, dynamic> json) => QuestionModel(
+  factory BaseQuestionModel.fromJson(Map<String, dynamic> json) =>
+      BaseQuestionModel(
         questionType: json['questionType'],
         questionID: json['questionID'],
-        questions: List<Question>.from(
-          json['questions'].map((question) => Question.fromJson(question)),
+        questions: List<QuestionModel>.from(
+          json['questions'].map((question) => QuestionModel.fromJson(question)),
         ),
       );
 }

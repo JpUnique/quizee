@@ -1,106 +1,106 @@
 {
     "questions": [
         {
-            "answer": "Generalized reinforcers",
+            "question": "The tokens used in Token Economy are:",
             "options": [
                 "Negative reinforcers",
                 "Generalized punishers",
                 "Negative punishers",
                 "Generalized reinforcers"
             ],
-            "question": "The tokens used in Token Economy are:"
+            "answer": "Generalized reinforcers"
         },
         {
-            "answer": "Discriminative stimulus; Stimulus delta",
+            "question": "When Raul asks his Math teacher for permission to use the restroom, he usually gets it. When Raul asks his classmate for permission, he usually does not get it. It's likely that the teacher will become a(n):___________________ and the classmate will become a(n):",
             "options": [
                 "Discriminative stimulus; Stimulus delta",
                 "Stimulus delta; Discriminative stimulus",
                 "Punisher; Reinforcer",
                 "Discriminative stimulus for punishment; punisher"
             ],
-            "question": "When Raul asks his Math teacher for permission to use the restroom, he usually gets it. When Raul asks his classmate for permission, he usually does not get it. It's likely that the teacher will become a(n):___________________ and the classmate will become a(n):"
+            "answer": "Discriminative stimulus; Stimulus delta"
         },
         {
-            "answer": "Continuous schedule of reinforcement",
+            "question": "Sally, a behavior analyst, is training a child to discriminate colors. She places a red card and a blue card side-by-side and tells the child 'Point to red'. Every time the child points to the red card, Sally gives her a bite of her favorite fruit. In this example, Sally used:",
             "options": [
                 "Negative reinforcement",
                 "Intermittent schedule of reinforcement",
                 "Variable ratio 2",
                 "Continuous schedule of reinforcement"
             ],
-            "question": "Sally, a behavior analyst, is training a child to discriminate colors. She places a red card and a blue card side-by-side and tells the child 'Point to red'. Every time the child points to the red card, Sally gives her a bite of her favorite fruit. In this example, Sally used:"
+            "answer": "Continuous schedule of reinforcement"
         },
         {
-            "answer": "Forward chaining",
+            "question": "A BCBA task analyzed the skill of brushing teeth. The instructions were clear; the first step would be to teach the client to dry his hands and put the towel away. Which chaining procedure is the RBT implementing in this case?",
             "options": [
                 "Forward chaining",
                 "Backward chaining",
                 "Total task",
                 "Backward chaining with leaps ahead"
             ],
-            "question": "A BCBA task analyzed the skill of brushing teeth. The instructions were clear; the first step would be to teach the client to dry his hands and put the towel away. Which chaining procedure is the RBT implementing in this case?"
+            "answer": "Forward chaining"
         },
         {
-            "answer": "Least to most prompting",
+            "question": "The following prompt, please make sure to properly style your response using Github Flavored Markdown. Use markdown syntax for things like headings, lists, colored text, code blocks, highlights etc. Make sure not to mention markdown or styling in your actual response.",
             "options": [
                 "Forward chaining",
                 "Backward chaining",
                 "Total task",
                 "Least to most prompting"
             ],
-            "question": "The tokens used in Token Economy are:"
+            "answer": "Least to most prompting"
         },
         {
-            "answer": "Prompts are provided to avoid errors.",
+            "question": "Which of the following statements is true for errorless teaching?",
             "options": [
                 "The client is expected to commit errors during this teaching method.",
                 "The responses are expected to be placed under extinction.",
                 "Prompts are provided to avoid errors.",
                 "Errors are punished with positive punishment."
             ],
-            "question": "Which of the following statements is true for errorless teaching?"
+            "answer": "Prompts are provided to avoid errors."
         },
         {
-            "answer": "Least to most prompting",
+            "question": "An individual was learning to ride her bicycle. Her father first assisted her with a full physical prompt. Gradually her father's assistance decreased its invasiveness. This example is an example of:",
             "options": [
                 "Most to least prompting",
                 "Progressive time delay",
                 "Least to most prompting",
                 "Error correction"
             ],
-            "question": "An individual was learning to ride her bicycle. Her father first assisted her with a full physical prompt. Gradually her father's assistance decreased its invasiveness. This example is an example of:"
+            "answer": "Least to most prompting"
         },
         {
-            "answer": "Zero second delay",
+            "question": "Progressive time delay is always started with a:",
             "options": [
                 "Zero second delay",
                 "Warning",
                 "Reinforcer",
                 "Physical prompt"
             ],
-            "question": "Progressive time delay is always started with a:"
+            "answer": "Zero second delay"
         },
         {
-            "answer": "Non-Contingent reinforcement",
+            "question": "During a session, a client was presented with multiple Math exercises. The client was reinforced with a chocolate chip cookie every 5 minutes regardless of the behavior he engaged in. This is an example of:___________________",
             "options": [
                 "Fixed interval 5 min",
                 "Variable interval 5 min",
                 "Non-Contingent reinforcement",
                 "Consequence manipulation"
             ],
-            "question": "During a session, a client was presented with multiple Math exercises. The client was reinforced with a chocolate chip cookie every 5 minutes regardless of the behavior he engaged in. This is an example of:___________________"
+            "answer": "Non-Contingent reinforcement"
         },
         {
-            "answer": "Erase the number of checkmarks corresponding to the traded reinforcer",
+            "question": "An RBT is using Token Economy to reinforce following directions. The tokens are checkmarks on a piece of paper. Whenever the client trades his tokens for reinforcers, the therapist should:________________________",
             "options": [
                 "Erase all the checkmarks",
                 "Erase the number of checkmarks corresponding to the traded reinforcer",
                 "Let the client keep some tokens to avoid problematic behaviors",
                 "Add more checkmarks to the piece of paper to keep track of the transactions"
             ],
-            "question": "An RBT is using Token Economy to reinforce following directions. The tokens are checkmarks on a piece of paper. Whenever the client trades his tokens for reinforcers, the therapist should:________________________"
+            "answer": "Erase the number of checkmarks corresponding to the traded reinforcer"
         }
-    ]
-    "questionType": "Fourth and Fifth QUIZZ_ Chapter C Part I&II Skills adquisition",
-  "questionID" : "4"
+    ],
+    "questionType": "Fourth and Fifth QUIZ_ Chapter C Part I&II Skills Acquisition",
+    "questionID": "4"
 }
