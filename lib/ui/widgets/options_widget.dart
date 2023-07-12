@@ -38,18 +38,7 @@ class OptionBox extends ViewModelWidget<QuestionViewModel> {
             decoration: BoxDecoration(
               color: _getColor(viewModel.isAnswered,viewModel.selectedOption,question.answer),
               borderRadius: BorderRadius.circular(10),
-              border: viewModel.isAnswered
-                  ? Border.all(
-                      color: Colors.green,
-                      style: BorderStyle.solid,
-                      width: 2,
-                    )
-                  : Border.all(
-                      color: Colors.transparent,
-                      style: BorderStyle.none,
-                      width: 0,
-                    ),
-            ),
+              border: _getBorder(viewModel.isAnswered,viewModel.selectedOption,question.answer)),
             margin: const EdgeInsets.only(top: 10),
             padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 10),
             child: Row(
@@ -99,5 +88,32 @@ Color _getColor(
       return Colors.red;
   } else {
     return Colors.white;
+  }
+}
+
+Border _getBorder(
+  bool isSelected, [
+  String? option,
+  String? correctOption,
+]) {
+  if (isSelected == true) {
+    if (correctOption == option)
+      return Border.all(
+                      color: Colors.green,
+                      style: BorderStyle.solid,
+                      width: 2,
+                    ); 
+    else
+      return Border.all(
+                      color: Colors.red,
+                      style: BorderStyle.none,
+                      width: 0,
+                    );
+  } else {
+    return Border.all(
+                      color: Colors.transparent,
+                      style: BorderStyle.none,
+                      width: 0,
+                    );;
   }
 }

@@ -25,7 +25,7 @@ class QuestionWidget extends StatelessWidget {
           'Question ${currentQuestion + 1} of $totalQuestion',
           style: const TextStyle(
             color: Colors.white,
-            fontSize: 20,
+            fontSize: 18,
             fontWeight: FontWeight.w500,
           ),
         ),
@@ -35,7 +35,7 @@ class QuestionWidget extends StatelessWidget {
           textAlign: TextAlign.center,
           style: const TextStyle(
             color: Colors.white,
-            fontSize: 24,
+            fontSize: 20,
             fontWeight: FontWeight.w700,
           ),
         ),
