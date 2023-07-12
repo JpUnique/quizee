@@ -9,6 +9,12 @@ class QuestionViewModel extends BaseViewModel {
   String? selectedOption;
    bool isAnswered = false;
 
+  //define the datas
+  int currentQuestionIndex = 0;
+  int score = 0;
+  String? selectedAnswer;
+  bool lockSelection = false;
+
   List<String> option = [];
 
   updatePagePosition(int currentPos) {
