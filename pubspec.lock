@@ -669,6 +669,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "6.7.1"
+  linear_timer:
+    dependency: "direct main"
+    description:
+      name: linear_timer
+      sha256: d8707448e9464c7436565791406b9b73a785ce09c5c3dd870b8c5cd9755355d5
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.0"
   logger:
     dependency: "direct main"
     description:
@@ -1315,5 +1323,5 @@ packages:
     source: hosted
     version: "3.1.2"
 sdks:
-  dart: ">=3.0.2 <3.2.0"
+  dart: ">=3.0.6 <3.2.0"
   flutter: ">=3.7.0-0"

@@ -4,8 +4,9 @@ import 'package:firebase_auth/firebase_auth.dart';
 
 import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-import 'package:quizee/loginScreen/login.dart';
-import 'package:quizee/mainScreen/main_screen.dart';
+
+import '../../ui/screens/loginScreen/login.dart';
+import '../../ui/screens/mainScreen/main_screen.dart';
 
 /*class AuthService {
 

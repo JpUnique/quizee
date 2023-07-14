@@ -1,51 +1,46 @@
 import 'package:flutter/material.dart';
+import 'package:stacked/stacked.dart';
 
-class QuestionWidget extends StatelessWidget {
-  final int currentQuestion;
+import '../screens/quiz/quiz_view_model.dart';
 
-  final int totalQuestion;
 
-  final String question;
-
-  const QuestionWidget({
-    Key? key,
-    required this.currentQuestion,
-    required this.totalQuestion,
-    required this.question,
-  }) : super(key: key);
+class questionWidget extends ViewModelWidget<QuestionViewModel> {
+  const questionWidget({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, model) {
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.center,
-      mainAxisSize: MainAxisSize.min,
+      crossAxisAlignment: CrossAxisAlignment.start,
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        const SizedBox(height: 10),
         Text(
-          'Question ${currentQuestion + 1} of $totalQuestion',
-          style: const TextStyle(
-            color: Colors.white,
-            fontSize: 18,
-            fontWeight: FontWeight.w500,
-          ),
-        ),
-        const SizedBox(height: 10),
-        Text(
-          question.toString(),
-          textAlign: TextAlign.center,
+          "Question ${model.questionPos + 1}/${model.questions.length.toString()}",
           style: const TextStyle(
             color: Colors.white,
             fontSize: 20,
-            fontWeight: FontWeight.w700,
+            fontWeight: FontWeight.w600,
           ),
         ),
-        const SizedBox(height: 10),
-        const Divider(
-          color: Colors.white,
-          thickness: 2,
-        ),
         const SizedBox(height: 20),
+        Container(
+          alignment: Alignment.center,
+          width: double.infinity,
+          padding: const EdgeInsets.all(32),
+          decoration: BoxDecoration(
+            color: Colors.orangeAccent,
+            borderRadius: BorderRadius.circular(16),
+          ),
+          child: Text(
+            model.questions[model.questionPos].question!,
+            style: const TextStyle(
+              color: Colors.white,
+              fontSize: 18,
+              fontWeight: FontWeight.w600,
+            ),
+          ),
+        )
       ],
     );
   }
 }
+

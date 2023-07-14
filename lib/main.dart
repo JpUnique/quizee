@@ -1,16 +1,10 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
-//import 'package:quizee/mainScreen/main_screen.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
-import 'package:quizee/welcomeScreen/welcome_page.dart';
 import 'firebase_options.dart';
-//import 'mainScreen/Example_screen/each_example.dart';
-//import 'package:quizee/mainScreen/main_screen.dart';
-//import 'package:quizee/welcomeScreen/welcome_screen.dart';xa
-
-//import 'package:quizee/welcomeScreen/welcome_screen.dart';
+import 'ui/screens/welcomeScreen/welcome_page.dart';
 
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
